@@ -1,0 +1,15 @@
+.prog {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.progs {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.white {
+    opacity: 30%;
+}

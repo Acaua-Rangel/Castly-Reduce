@@ -1,0 +1,42 @@
+.addons {
+    position: absolute;
+    align-items: center;
+    right: 20px;
+    top: 20px;
+}
+.perfil {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #040011;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.username-fill {
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.email-fill {
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.button {
+    cursor: pointer;
+}
+
+@media (max-width: 640px) {
+    .addons {
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+}

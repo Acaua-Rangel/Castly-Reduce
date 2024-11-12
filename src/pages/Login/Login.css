@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0 15px; /* Padding added to prevent touching the edges */
+}
+
+.login-form-container h2 {
+    font-size: 20px;
+}
+
+.login-logo img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.login-form h2 {
+    font-size: 20px;
+}
+
+.login-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form input {
+    font-size: 15px;
+    background-color: #040011;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login-form button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    border: white 3px solid;
+    color: #040011;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login-form button:hover {
+    background: transparent;
+    color: white;
+}
+
+.signup-link {
+    margin: 20px 0;
+}
+
+.signup-link a {
+    color: #EA00FF;
+    text-decoration: underline;
+}
+
+.or {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.or div {
+    height: 3px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100px;
+}
+
+.login-socials {
+    margin: 10px;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+}
+
+.google-login,
+.facebook-login {
+    width: 100%;
+}
+
+.login-socials span {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        margin-top: 70px;
+        padding: 0 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .login-form-container {
+        margin-top: 50px; 
+        padding: 0 10px; 
+    }
+
+    .login-form h2 {
+        font-size: 18px;
+    }
+
+    .login-form input,
+    .login-form button,
+    .social-login {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .login-form-container {
+        margin-top: 50px; 
+        padding: 0 10px;
+    }
+
+    .login-form h2 {
+        font-size: 18px;
+    }
+
+    .google-login,
+    .facebook-login {
+        width: 100%;
+    }
+
+}

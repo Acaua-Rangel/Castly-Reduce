@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #02060E;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    z-index: 9000;
+}
+
+.context-fot img {
+    width: 265px;
+}
+
+.context-fot p {
+    width: 450px;
+    word-wrap: break-word;
+}
+
+footer div ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 15px;
+}
+
+.copyRight {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    opacity: 100%;
+}
+
+footer div ul li:hover {
+    opacity: 70%;
+}
+
+/* Responsividade */
+@media (max-width: 1060px) {
+    footer {
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+    .context-fot p,
+    footer div ul li a,
+    .copyRight {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .context-fot p {
+        width: 90%;
+        text-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .context-fot p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .context-fot img {
+        width: 90%;
+    }
+
+}

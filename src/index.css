@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: white;
+    --dark-background: #030812;
+
+    --gray: rgba(0, 0, 0, .3);
+
+    --sub-background: rgb(240, 240, 240);
+    --dark-sub-background: #02060E;
+
+    --purple: #6800FF;
+
+    font-family: 'Inter', sans-serif;
+}

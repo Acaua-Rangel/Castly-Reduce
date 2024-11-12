@@ -1,0 +1,57 @@
+.platform-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-it {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-it {
+    display: flex;
+    gap: 20px;
+}
+
+.trash {
+    color: red;
+    background-color: transparent;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.trash:hover {
+    opacity: .7;
+}
+
+.edit {
+    color: gray;
+    background-color: transparent;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.edit:hover {
+    opacity: .7;
+}
+
+.edit-platform-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.edit-platform-container.open {
+    max-height: 200px; 
+    display: flex; 
+}
+
+.platform-item {
+    background-color: inherit; 
+}
