@@ -113,15 +113,13 @@ function Dashboard() {
         window.addEventListener('resize', updateWidth);
 
         if (clerk.session) {
-            console.log(clerk.session.id);
             clerk.session
                 .getToken()
                 .then((token) => {
                     api
                         .post("/nginx/get-streams", {}, {
                             headers: {
-                              Authorization: `Bearer ${token}`,
-                              key: clerk.session.id
+                              Authorization: `Bearer ${token}`
                             },
                         })
                         .then((response) => {
